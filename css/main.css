@@ -1,0 +1,334 @@
+/***** BASE STYLES *****/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #1f202b;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body p {
+  color: #ffffff;
+  font-size: 1em;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+/***** GRID *****/
+
+
+
+.full-width {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  /*margin: 0 auto;*/
+  max-width: 1500px;
+}
+
+.half-width {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  max-width: 750px;
+  width: 90%;
+}
+
+.third-width {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  /*margin: 0 auto;*/
+  max-width: 500px;
+  width: 100%;
+}
+
+/***** HEADER *****/
+
+header {
+  width: 95%;
+  padding-bottom: 40px;
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: normal;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header span {
+  content: "\003E";
+  font-size: 1em;
+}
+
+
+nav {
+  display: flex;
+  padding-bottom: 20px;
+  /* padding: 10px 10px 20px 50px; */
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  list-style-type: none;
+}
+
+nav ul li {
+}
+
+nav ul li a {
+  color: #ffffff;
+  font-size: 1.125em;
+  font-weight: normal;
+  margin: 20px;
+  text-decoration: none;
+  text-transform: lowercase;
+
+}
+
+header h2 {
+  background: url('../img/images/assets/hero-background.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  color: #ffffff;
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 1.5em;
+  padding-left: 20px;
+  padding-top: 20px;
+  text-transform: lowercase;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0;
+}
+
+header h2 span {
+  color: #fa0075;
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 1.5em;
+  text-transform: lowercase;
+  padding-top: 30px;
+  margin: 0;
+  display: flex;
+}
+
+
+/***** PORTFOLIO *****/
+
+#portfolio {
+  padding-bottom: 50px;
+}
+
+#portfolio h3 {
+  color: #fa0075;
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 1.5em;
+  padding-bottom: 50px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#portfolio h4 {
+  color: #ffffff;
+  font-size: 1.125em;
+  font-weight: bold;
+}
+
+#portfolio h5 {
+  color: #ffffff;
+  font-size: 1.125em;
+  font-weight: normal;
+  text-align: center;
+}
+
+.right-text {
+  text-align: justify;
+}
+
+#portfolio figure img {
+  border-color: #b7b7b7;
+  border-style: solid;
+  border-width: 1px;
+  width: 100%;
+}
+
+
+#portfolio p {
+  line-height: 2;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+
+
+
+/***** ABOUT *****/
+
+#about {
+  background: url('../img/images/assets/about-me.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+  width: 100%;
+}
+
+#about h3 {
+  color: #fa0075;
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: lowercase;
+  margin: 15px 0  15px 0;
+  line-height: 2;
+}
+
+#about h4 {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0;
+  line-height: 2;
+}
+
+#about p {
+  color: #1f202b;
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 0;
+  text-align: justify;
+  /*margin-left: 50px;*/
+}
+
+#about h5 {
+  font-size: 1.125em;
+  font-weight: bold;
+  margin: 0;
+  line-height: 2;
+  /*margin-left: 50px;*/
+}
+
+
+/***** CONTACT *****/
+
+#contact .footer-content {
+  display: flex;
+}
+
+
+
+#contact h3 {
+  color: #fa0075;
+  font-family: 'Source Code Pro', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  width: 100%;
+}
+
+#contact h4 {
+  color: #ffffff;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  display: flex;
+}
+
+#contact p {
+  font-size: 1em;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#contact p a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#contact .social-icons {
+  display: flex;
+}
+
+#contact .social-icons p {
+  margin: 20px;
+}
+
+#contact .social-icons p a {
+  color: #fa0075;
+  font-size: 2em;
+}
+
+#contact h6 {
+  color: #ffffff;
+  font-size: 0.875em;
+  font-weight: normal;
+  /* line-height: 9.375; */
+  text-align: center;
+  margin: 0;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width:768px) {
+
+  header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  header .full-width {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  header h1,
+  header h1 span {
+    font-size: 1.5em;
+  }
+
+  nav {
+    width: 50%;
+  }
+
+  nav ul li a {
+    font-size: 1.125em;
+  }
+
+  header h2 {
+    font-size: 3.75em;
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  header h1 {
+    width: 30%;
+    font-size: 1.125em;
+  }
+}
