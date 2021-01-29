@@ -27,6 +27,10 @@ figure {
 
 /***** GRID *****/
 
+.container {
+  width: 90%;
+}
+
 
 
 .full-width {
@@ -61,18 +65,16 @@ figure {
 /***** HEADER *****/
 
 header {
-  width: 95%;
+  width: 100%;
   padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 header h1 {
   color: #ffffff;
   font-size: 1em;
   font-weight: normal;
-  padding-left: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 header span {
@@ -83,12 +85,13 @@ header span {
 
 nav {
   display: flex;
-  padding-bottom: 20px;
+  padding-bottom: 20px
   /* padding: 10px 10px 20px 50px; */
 }
 
 nav ul {
   display: flex;
+  padding: 0;
   justify-content: space-between;
   align-content: center;
   list-style-type: none;
@@ -139,6 +142,8 @@ header h2 span {
 
 #portfolio {
   padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 #portfolio h3 {
@@ -154,6 +159,8 @@ header h2 span {
   color: #ffffff;
   font-size: 1.125em;
   font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 0;
 }
 
 #portfolio h5 {
@@ -161,6 +168,8 @@ header h2 span {
   font-size: 1.125em;
   font-weight: normal;
   text-align: center;
+  margin-top: 15px;
+  margin-bottom: 0;
 }
 
 .right-text {
@@ -176,9 +185,10 @@ header h2 span {
 
 
 #portfolio p {
-  line-height: 2;
+  line-height: 1.75;
   text-align: justify;
   margin-bottom: 30px;
+  margin-top: 15px;
 }
 
 
@@ -187,6 +197,8 @@ header h2 span {
 /***** ABOUT *****/
 
 #about {
+  display: flex;
+  justify-content: center;
   background: url('../img/images/assets/about-me.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -201,30 +213,31 @@ header h2 span {
   font-size: 1.5em;
   text-align: center;
   text-transform: lowercase;
-  margin: 15px 0  15px 0;
+  margin: 15px 0 0 0;
   line-height: 2;
 }
 
 #about h4 {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: bold;
-  margin: 0;
+  margin: 0 0 15px 0;
   line-height: 2;
 }
 
 #about p {
   color: #1f202b;
   font-size: 1em;
-  line-height: 1.5;
+  line-height: 1.4;
   margin-bottom: 0;
   text-align: justify;
+  margin: 0;
   /*margin-left: 50px;*/
 }
 
 #about h5 {
   font-size: 1.125em;
   font-weight: bold;
-  margin: 0;
+  margin: 10px 0 0 0;
   line-height: 2;
   /*margin-left: 50px;*/
 }
@@ -293,6 +306,15 @@ header h2 span {
 
 @media only screen and (min-width:768px) {
 
+/*********** Tablet Media Queries Here ***********/
+
+  .half-width {
+    justify-content: space-between;
+    width: 45%;
+  }
+
+
+
   header {
     display: flex;
     justify-content: flex-start;
@@ -308,11 +330,11 @@ header h2 span {
 
   header h1,
   header h1 span {
-    font-size: 1.5em;
+    font-size: 1.125em;
   }
 
   nav {
-    width: 50%;
+    padding: 0;
   }
 
   nav ul li a {
