@@ -308,29 +308,31 @@ header h2 span {
 
 /*********** Tablet Media Queries Here ***********/
 
-  .half-width {
-    justify-content: space-between;
-    width: 45%;
+  .container {
+    width: 100%;
+    display: flex;
   }
 
 
-
-  header {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: row wrap;
+  .half-width {
+    justify-content: space-evenly;
+    width: 90%;
   }
 
   header .full-width {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  header .half-width {
+    width: 50%;
   }
 
   header h1,
   header h1 span {
     font-size: 1.125em;
+    display: flex;
   }
 
   nav {
