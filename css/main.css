@@ -316,9 +316,17 @@ header h2 span {
 
   .half-width {
     justify-content: space-evenly;
+    flex-flow: column wrap;
     width: 90%;
   }
 
+  .third-width {
+    flex-flow: column wrap;
+    width: 50%;
+  }
+
+
+/******* Header Styles *******/
   header .full-width {
     width: 100%;
     display: flex;
@@ -346,7 +354,70 @@ header h2 span {
   header h2 {
     font-size: 3.75em;
     padding-top: 100px;
+    padding-left: 40px;
   }
+
+
+/******** Portfolio Styles ******/
+
+  #portfolio h3 {
+    font-size: 2em;
+  }
+
+  #portfolio h4 {
+    font-size: 1.25em;
+  }
+
+  #portfolio p {
+    line-height: 1.5;
+    font-size: 1.125em;
+    margin: 15px 20px 30px 20px;
+  }
+
+/******** About Styles ********/
+
+  #about {
+    min-height: 0px;
+  }
+
+  #about .full-width {
+    display: flex;
+  }
+
+  #about .half-width {
+
+  }
+
+  #about h3 {
+    font-size: 2em;
+  }
+
+  #about h4 {
+    font-size: 1.25em;
+  }
+
+  #about p {
+    font-size: 1.125em;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  #about h5 {
+    font-size: 1.25em;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
+
+  /******* Contact Styles *******/
+
+  #contact h3 {
+    font-size: 2em;
+  }
+
+  #contact h4 {
+    font-size: 1.25em;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
