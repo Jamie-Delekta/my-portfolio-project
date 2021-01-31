@@ -31,16 +31,12 @@ figure {
   width: 90%;
 }
 
-
-
 .full-width {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  /*margin: 0 auto;*/
-  /*max-width: 1500px;*/
 }
 
 .half-width {
@@ -48,7 +44,6 @@ figure {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  /*max-width: 750px;*/
   width: 90%;
 }
 
@@ -57,12 +52,12 @@ figure {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  /*margin: 0 auto;*/
-  /*max-width: 500px;*/
   width: 100%;
 }
 
+
 /***** HEADER *****/
+
 
 header {
   width: 100%;
@@ -82,11 +77,9 @@ header span {
   font-size: 1em;
 }
 
-
 nav {
   display: flex;
   padding-bottom: 20px;
-  /* padding: 10px 10px 20px 50px; */
 }
 
 nav ul {
@@ -97,9 +90,6 @@ nav ul {
   list-style-type: none;
 }
 
-nav ul li {
-}
-
 nav ul li a {
   color: #ffffff;
   font-size: 1.125em;
@@ -107,7 +97,6 @@ nav ul li a {
   margin: 20px;
   text-decoration: none;
   text-transform: lowercase;
-
 }
 
 header h2 {
@@ -138,7 +127,9 @@ header h2 span {
 }
 
 
+
 /***** PORTFOLIO *****/
+
 
 #portfolio {
   padding-bottom: 50px;
@@ -184,7 +175,6 @@ header h2 span {
   width: 100%;
 }
 
-
 #portfolio p {
   line-height: 1.75;
   text-align: justify;
@@ -193,9 +183,8 @@ header h2 span {
 }
 
 
-
-
 /***** ABOUT *****/
+
 
 #about {
   display: flex;
@@ -204,7 +193,6 @@ header h2 span {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 500px;
   width: 100%;
 }
 
@@ -233,26 +221,23 @@ header h2 span {
   margin-bottom: 0;
   text-align: justify;
   margin: 0;
-  /*margin-left: 50px;*/
 }
 
 #about h5 {
   font-size: 1.125em;
   font-weight: bold;
-  margin: 10px 0 0 0;
+  margin: 10px 0 50px 0;
   line-height: 2;
   text-align: center;
-  /*margin-left: 50px;*/
 }
 
 
 /***** CONTACT *****/
 
+
 #contact .footer-content {
   display: flex;
 }
-
-
 
 #contact h3 {
   color: #fa0075;
@@ -300,12 +285,12 @@ header h2 span {
   color: #ffffff;
   font-size: 0.875em;
   font-weight: normal;
-  /* line-height: 9.375; */
   text-align: center;
   margin: 0;
 }
 
-/* Media Queries */
+
+/******** Media Queries *********/
 
 @media only screen and (min-width:768px) {
 
@@ -315,7 +300,6 @@ header h2 span {
     width: 100%;
     display: flex;
   }
-
 
   .half-width {
     justify-content: space-evenly;
@@ -330,6 +314,7 @@ header h2 span {
 
 
 /******* Header Styles *******/
+
   header .full-width {
     width: 100%;
     display: flex;
@@ -378,6 +363,7 @@ header h2 span {
     margin: 15px 20px 30px 20px;
   }
 
+
 /******** About Styles ********/
 
   #about {
@@ -408,6 +394,7 @@ header h2 span {
     padding-bottom: 20px;
   }
 
+
   /******* Contact Styles *******/
 
   #contact h3 {
@@ -419,14 +406,16 @@ header h2 span {
   }
 }
 
+/********* End of tablet styles *********/
+
 
 @media only screen and (min-width: 1200px) {
 
 /************ Desktop Styles Here **************/
 
 
-/****** Header Styles ******/
 
+/****** Header Styles ******/
 
 
   header .half-width {
@@ -435,7 +424,7 @@ header h2 span {
 
   header h1 {
     font-size: 1.75em;
-    margin: 30px 0 30px 0;
+    margin: 30px 0;
   }
 
   header nav {
@@ -444,7 +433,7 @@ header h2 span {
   }
 
   header nav ul {
-    margin: 30px 0 30px 0;
+    margin: 30px 0;
   }
 
   header h2 {
@@ -459,6 +448,10 @@ header h2 span {
 
 
 /********* Portfolio Styles ********/
+
+  #portfolio {
+    padding-bottom: 100px;
+  }
 
   #portfolio .container {
     display: flex;
@@ -495,19 +488,73 @@ header h2 span {
   }
 
   #portfolio h4 {
-    font-size: 2em;
+    font-size: 1.75em;
     text-align: center;
   }
 
   #portfolio h5 {
-    font-size: 1.75em;
+    font-size: 1.5em;
     margin-bottom: 15px;
     text-align: center;
   }
 
   #portfolio p {
-    font-size: 1.5em;
+    font-size: 1.25em;
     margin: 0px;
   }
 
+
+  /********* About Section *********/
+
+  #about .full-width {
+    flex-flow: column wrap;
+    align-items: baseline;
+    margin-left: 60px;
+  }
+
+  #about .half-width {
+    width: 60%;
+    align-items: baseline;
+  }
+
+  #about h3 {
+    font-size: 2.125em;
+    margin: 40px 0;
+  }
+
+  #about h4 {
+    font-size: 1.5em;
+  }
+
+  #about p {
+    margin: 0px;
+    font-size: 1.25em;
+  }
+
+  #about h5 {
+    font-size: 1.25em;
+  }
+
+
+/********* Contact Section ***********/
+
+
+  #contact h3 {
+    font-size: 2.5em;
+    margin: 60px 0;
+  }
+
+  #contact h4 {
+    font-size: 1.5em;
+  }
+
+  #contact p {
+    font-size: 1.25em;
+  }
+
+  #contact h6 {
+    font-size: 1em;
+  }
+
 }
+/********** End of Desktop Styles **********/
