@@ -29,6 +29,7 @@ figure {
 
 .container {
   width: 90%;
+  margin: 0;
 }
 
 .full-width {
@@ -74,7 +75,6 @@ header h1 {
 
 header span {
   content: "\003E";
-  font-size: 1em;
 }
 
 nav {
@@ -99,16 +99,26 @@ nav ul li a {
   text-transform: lowercase;
 }
 
-header h2 {
+.hero {
   background: url('../img/images/assets/hero-background.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  min-height: 250px;
+}
+
+.hero .full-width {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px;
+}
+
+.hero h2 {
   color: #ffffff;
   font-family: 'Source Code Pro', sans-serif;
   font-size: 1.5em;
-  padding-left: 20px;
+  padding-left: 35px;
   padding-top: 20px;
   text-transform: lowercase;
   display: flex;
@@ -116,10 +126,9 @@ header h2 {
   margin: 0;
 }
 
-header h2 span {
+.hero h2 span {
   color: #fa0075;
   font-family: 'Source Code Pro', sans-serif;
-  font-size: 1.5em;
   text-transform: lowercase;
   padding-top: 30px;
   margin: 0;
@@ -215,7 +224,7 @@ header h2 span {
 }
 
 #about p {
-  color: #1f202b;
+  color: #000000;
   font-size: 1em;
   line-height: 1.4;
   margin-bottom: 0;
@@ -296,10 +305,7 @@ header h2 span {
 
 /*********** Tablet Media Queries Here ***********/
 
-  .container {
-    width: 100%;
-    display: flex;
-  }
+
 
   .half-width {
     justify-content: space-evenly;
@@ -322,11 +328,14 @@ header h2 span {
   }
 
   header .half-width {
-    width: 50%;
+    width: 45%;
   }
 
-  header h1,
-  header h1 span {
+  header {
+    padding: 0;
+  }
+
+  header h1 {
     font-size: 1.125em;
     display: flex;
   }
@@ -339,10 +348,13 @@ header h2 span {
     font-size: 1.125em;
   }
 
-  header h2 {
+  .hero .full-width {
+    justify-content: flex-start;
+  }
+
+  .hero h2 {
     font-size: 3.75em;
-    padding-top: 100px;
-    padding-left: 40px;
+    padding: 50px 0 50px 40px;
   }
 
 
@@ -372,6 +384,12 @@ header h2 span {
 
   #about .full-width {
     display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+
+  #about .half-width {
+    align-items: baseline;
   }
 
   #about h3 {
@@ -384,8 +402,7 @@ header h2 span {
 
   #about p {
     font-size: 1.125em;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 100px;
   }
 
   #about h5 {
@@ -418,8 +435,16 @@ header h2 span {
 /****** Header Styles ******/
 
 
+  header {
+    justify-content: space-between;
+  }
+
+  header .full-width {
+    justify-content: space-between;
+  }
+
   header .half-width {
-    width: 35%;
+    width: 45%;
   }
 
   header h1 {
@@ -429,20 +454,29 @@ header h2 span {
 
   header nav {
     font-size: 1.75em;
-    padding-left: 50px;
+    width: 35%;
   }
 
   header nav ul {
     margin: 30px 0;
   }
 
-  header h2 {
+  header nav ul li a {
+    font-size: 1em;
+  }
+
+  .hero .full-width {
+    justify-content: flex-start;
+  }
+
+  .hero h2 {
     font-size: 4.5em;
     min-height: 720px;
     display: block;
+    padding-left: 100px;
   }
 
-  header h2 span {
+  .hero h2 span {
     display: inline-block;
   }
 
@@ -465,6 +499,7 @@ header h2 span {
   #portfolio article {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   #portfolio article div {
@@ -518,7 +553,7 @@ header h2 span {
   }
 
   #about h3 {
-    font-size: 2.125em;
+    font-size: 2.5em;
     margin: 40px 0;
   }
 
