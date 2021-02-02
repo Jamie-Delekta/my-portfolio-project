@@ -173,7 +173,7 @@ nav ul li a {
   margin-bottom: 0;
 }
 
-.right-text {
+.jubilee {
   text-align: justify;
 }
 
@@ -507,13 +507,15 @@ nav ul li a {
     padding-bottom: 30px;
   }
 
-  #portfolio .rogue article {
+  #portfolio .rogue article,
+  #portfolio .unplugged article {
     display:flex;
     flex-flow: row-reverse;
     margin-bottom: 50px;
   }
 
-  #portfolio .right-text {
+  #portfolio .jubilee,
+  #portfolio .recipe {
     margin-bottom: 50px;
   }
 
